@@ -1,0 +1,23 @@
+public class org.javaschool.HelloWorld {
+  public org.javaschool.HelloWorld();
+    Code:
+       0: aload_0                           //第一个0是偏移量，把本地变量表里的第0个位置的变量加载到栈上                                                
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V，调用当前类的父类             
+       4: return                            //返回一个操作码
+
+  public int inc();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field m:I
+       4: iconst_1                          //增加1
+       5: iadd                              //整数相加
+       6: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #3                  // class org/javaschool/HelloWorld  从常量池获取第3个操作数
+       3: dup                               //压栈
+       4: invokespecial #4                  // Method "<init>":()V
+       7: astore_1                          //压到本地变量表的第3个位置
+       8: return
+}
